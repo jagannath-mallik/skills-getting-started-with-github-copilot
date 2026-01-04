@@ -81,10 +81,10 @@ section h3 {
 }
 
 .participants-list {
-  list-style: disc;
+  list-style: none;
   margin-top: 8px;
-  padding: 8px 14px;
-  padding-left: 22px;
+  padding: 8px 10px;
+  padding-left: 10px;
   max-height: 120px;
   overflow-y: auto;
   background-color: #ffffff;
@@ -93,9 +93,26 @@ section h3 {
 }
 
 .participant-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 6px;
   color: #424242;
   font-size: 14px;
+}
+
+.unregister-btn {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px 6px;
+  border-radius: 3px;
+}
+
+.unregister-btn:hover {
+  background: rgba(198,40,40,0.08);
 }
 
 .participant-item.muted {
